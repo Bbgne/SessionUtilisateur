@@ -22,9 +22,11 @@ public class PersistenceProvider {
 			catch (NamingException e){
 				e.printStackTrace();
 			}
+		
 		}
 		
 		public static Connection getConnection() throws SQLException {
 			return ds.getConnection();
 		}
+		
 }

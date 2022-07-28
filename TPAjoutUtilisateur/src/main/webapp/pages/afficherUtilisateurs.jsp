@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,13 +9,13 @@
 </head>
 <body>
 <%@ include file="/body/entete.jsp"%>
-	<form action="<%=request.getContextPath() %>/Inscrits" method="get">
+	<form action="<c:url value="/Inscrits"/>" method="get">
 		<input type="submit" value="Afficher les inscrits"/>
 	
 	</form>
 	
 	
 	
-<a href="<%=request.getContextPath() %>/index.jsp">Retour à la page d'accueil</a>
+<a href="<c:url value="index.jsp"/>">Retour à la page d'accueil</a>
 </body>
 </html>

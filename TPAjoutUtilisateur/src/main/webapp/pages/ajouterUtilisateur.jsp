@@ -9,7 +9,7 @@
 <body>
 <%@ include file="/body/entete.jsp"%>
 
-<form action="<%=request.getContextPath() %>/Inscription" method="post">
+<form action="<c:url value="/Inscription"/>" method="post">
 <label>Nom :</label>	<input type="text" name="nom"/><br>
 <label>Prénom :</label>	<input type="text" name="prenom"/><br>
 <label>Email :</label>	<input type="email" name="email"/><br>
@@ -17,6 +17,6 @@
 <input type="submit" value="Envoyer"/>
 	
 </form>
-<a href="<%=request.getContextPath() %>/index.jsp">Retour à la page d'accueil</a>
+<a href="<c:url value="index.jsp"/>">Retour à la page d'accueil</a>
 </body>
 </html>

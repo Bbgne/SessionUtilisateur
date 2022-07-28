@@ -12,9 +12,10 @@
 
 <p>Confirmer la suppression de l'utilisateur <%=id%> ?</p>
 
-<form action="<%=request.getContextPath() %>/Supprimer" method="post">
+<form action="<c:url value="/Supprimer"/>" method="post">
 <input type="hidden" name="identifiant" value="<%=id%>"/>
 <input type="submit" value="Confirmer"/>
 </form>
+<a href="<c:url value="index.jsp"/>">Retour à la page d'accueil</a>
 </body>
 </html>

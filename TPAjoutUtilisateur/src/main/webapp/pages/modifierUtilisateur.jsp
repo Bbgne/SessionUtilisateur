@@ -12,7 +12,7 @@
 
 <p>L'utilisateur sélectionné est le : <%=id%></p>
 
-<form action="<%=request.getContextPath() %>/Modifier" method="post">
+<form action="<c:url value="/Modifier"/>" method="post">
 <label>Nom :</label>	<input type="text" name="nom""> <br>
 <label>Prénom :</label>	<input type="text" name="prenom"/><br>
 <label>Email :</label>	<input type="email" name="email"/><br>
@@ -20,6 +20,6 @@
 <input type="submit" value="Modifier"/>
 	
 </form>
-<a href="<%=request.getContextPath() %>/index.jsp">Retour à la page d'accueil</a>
+<a href="<c:url value="index.jsp"/>">Retour à la page d'accueil</a>
 </body>
 </html>
